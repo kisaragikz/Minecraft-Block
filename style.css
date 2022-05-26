@@ -1,0 +1,74 @@
+html, body {
+      background-image: url('https://cdn.discordapp.com/attachments/468800874924474369/939099673732456498/2020-03-04_13.49.12.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      perspective: 1000px;
+    }
+
+    .box-space {
+      position: relative;
+      transform-style: preserve-3d;
+      animation: rotate 10s linear infinite;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate3d(0, 0, 0, 0);
+      }
+
+      100% {
+        transform: rotate3d(0.5, 1, -0.5, 360deg);
+      }
+    }
+
+    .box {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+      transform: rotateX(90deg) rotateY(90deg);
+    }
+
+    .box-front {
+      transform: translateX(-100px) translateY(-100px) translateZ(100px);
+      background-image: url('https://cdn.discordapp.com/attachments/468800874924474369/939097476579872768/8ZD0Y8kUB3z_yeExlmd_qp1pNbgLvbIQfQG5JZY_RpWCvY_1byF6F3bdR_kDNHPXG7c0UZaxLhsmURYGiJJos400.png');
+      background-size: cover;
+    }
+
+    .box-back {
+      transform: translateX(-100px) translateY(-100px) translateZ(-100px);
+      background-image: url('https://cdn.discordapp.com/attachments/468800874924474369/939097476579872768/8ZD0Y8kUB3z_yeExlmd_qp1pNbgLvbIQfQG5JZY_RpWCvY_1byF6F3bdR_kDNHPXG7c0UZaxLhsmURYGiJJos400.png');
+      background-size: cover;
+    }
+
+    .box-right {
+      transform: translateY(-100px) rotateY(90deg);
+      background-image: url('https://cdn.discordapp.com/attachments/468800874924474369/939097476579872768/8ZD0Y8kUB3z_yeExlmd_qp1pNbgLvbIQfQG5JZY_RpWCvY_1byF6F3bdR_kDNHPXG7c0UZaxLhsmURYGiJJos400.png');
+      background-size: cover;
+    }
+
+    .box-left {
+      transform: translateY(-100px) translateX(-200px) rotateY(90deg);
+      background-image: url('https://cdn.discordapp.com/attachments/468800874924474369/939097476579872768/8ZD0Y8kUB3z_yeExlmd_qp1pNbgLvbIQfQG5JZY_RpWCvY_1byF6F3bdR_kDNHPXG7c0UZaxLhsmURYGiJJos400.png');
+      background-size: cover;
+    }
+
+    .box-bottom {
+      transform: translateX(-100px) rotateX(90deg);
+      background-image: url('https://cdn.discordapp.com/attachments/468800874924474369/939097476579872768/8ZD0Y8kUB3z_yeExlmd_qp1pNbgLvbIQfQG5JZY_RpWCvY_1byF6F3bdR_kDNHPXG7c0UZaxLhsmURYGiJJos400.png');
+      background-size: cover;
+    }
+
+    .box-top {
+      transform: translateX(-100px) translateY(-200px) rotateX(90deg);
+      background-image: url('https://cdn.discordapp.com/attachments/468800874924474369/939097476579872768/8ZD0Y8kUB3z_yeExlmd_qp1pNbgLvbIQfQG5JZY_RpWCvY_1byF6F3bdR_kDNHPXG7c0UZaxLhsmURYGiJJos400.png');
+      background-size: cover;
+    }
